@@ -11,7 +11,7 @@ services:
         - NODE_ENDPOINT=${NODE_ENDPOINT}
         - MONGO_CLIENT_URI=mongodb://mongodb:27017
         - MONGO_DB_NAME=blk-quorum-dev
-        - UI_IP=http://${EXPLORER_IP}:${EXPLORER_UI_PORT}
+        - UI_IP=http://${EXPLORER_IP}:5000
     links:
         - mongodb
     depends_on:
