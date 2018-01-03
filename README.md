@@ -8,9 +8,10 @@ This dockerized environment is designed for viewing private
 
 ## Usage
 
+Clone the repo, navigate to the cloned directory and run the instance with:
+
 ```bash
-cd ~/explorer-free
-EXPLORER_IP=<server_ip> NODE_ENDPOINT=<node_endpoint> docker-compose -f free-docker-compose.yaml up
+EXPLORER_IP=<server_ip> NODE_ENDPOINT=<node_endpoint> docker-compose up
 ```
 
 N.B. Use the `-d` at the end to run the containers in the backgroud
@@ -18,7 +19,7 @@ N.B. Use the `-d` at the end to run the containers in the backgroud
 ### Local machine
 
 ```bash
-EXPLORER_IP=localhost NODE_ENDPOINT=http://${NODE_IP}:20010 docker-compose -f free-docker-compose.yaml up
+EXPLORER_IP=localhost NODE_ENDPOINT=http://${NODE_IP}:20010 docker-compose up
 ```
 
 You will be able to access the following endpoint:
