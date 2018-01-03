@@ -10,8 +10,10 @@ This dockerized environment is designed for viewing private
 
 ```bash
 cd ~/explorer-free
-EXPLORER_IP=<server_ip> NODE_ENDPOINT=<node_endpoint> docker-compose -f free-docker-compose.yaml up -d
+EXPLORER_IP=<server_ip> NODE_ENDPOINT=<node_endpoint> docker-compose -f free-docker-compose.yaml up
 ```
+
+N.B. Use the `-d` at the end to run the containers in the backgroud
 
 ### Local machine
 
