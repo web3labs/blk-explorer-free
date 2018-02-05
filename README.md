@@ -19,7 +19,7 @@ N.B. Use the `-d` at the end to run the containers in the backgroud
 ### Local machine
 
 ```bash
-EXPLORER_IP=localhost NODE_ENDPOINT=http://${NODE_IP}:20010 docker-compose up
+EXPLORER_IP=localhost NODE_ENDPOINT=http://localhost:20010 docker-compose up -d
 ```
 
 You will be able to access the following endpoint:
