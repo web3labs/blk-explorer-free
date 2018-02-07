@@ -18,7 +18,7 @@ The <instance-name> value should be unique for every new network being connected
 
 N.B. Use the `-d` at the end to run the containers in the backgroud
 
-N.B. Ommitting the `-p <instance-name>` may lead to inconsitant data shown in the explorer
+N.B. Omitting the `-p <instance-name>` may lead to inconsitant data shown in the explorer
  
 ### Local machine
 
