@@ -41,3 +41,8 @@ You will be able to access the explorer UI on the following endpoint:
 You will be able to access the explorer UI on the following endpoint:
 
 * http://<VM-IP|FQDN>:5000
+
+### Limitations
+
+1. Due to an annoying [limitation](https://github.com/moby/moby/issues/1143) with Docker, you may only have one instance of the explorer running at a time.
+2. Viewing private transaction payloads on Quorum v2.0.0 (prior versions work) is not supported due to [this](https://github.com/jpmorganchase/quorum/issues/221) issue which should be patched up imminently.
