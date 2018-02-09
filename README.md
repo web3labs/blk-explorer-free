@@ -1,10 +1,9 @@
-# Block Explorer for Quorum
+# Block Explorer for Quorum and Ethereum
 
 ## Introduction
 
 This dockerized environment is designed for viewing private 
-[Quorum](https://github.com/jpmorganchase/quorum) network. It is also compatible with [Ethereum](https://github.com/ethereum/go-ethereum) networks and ***may*** work with other forked variants
-
+[Quorum](https://github.com/jpmorganchase/quorum) and [Ethereum](https://github.com/ethereum/go-ethereum) networks.
 
 ## Usage
 
