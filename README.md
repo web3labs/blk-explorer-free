@@ -15,7 +15,7 @@ Clone the repo, navigate to the cloned directory and run the instance with:
 NODE_ENDPOINT=http://<node_endpoint>: docker-compose -p <instance-name> up
 ```
 
-The <instance-name> value should be unique for every new network being connected to.
+The `<instance-name>` value should be unique for every new network being connected to.
 
 N.B. Use the `-d` at the end to run the containers in the backgroud
 
@@ -30,19 +30,6 @@ NODE_ENDPOINT=http://localhost:20010 docker-compose -p localchain up -d
 You will be able to access the explorer UI on the following endpoint:
 
 * http://localhost:5000
-
-### Cloud
-
-1. Create a Linux VM with Ubuntu. 
-2. From the created VM:
-	    1. Install Docker. 
-	    2. Set `EXPLORER_IP=<Address_of_VM>` variable to the IP address of the VM in the cloud
-        3. Continue as per the local machine set-up above after ssh to VM, changing the 
-        4. Open ports 5000 and 8081 on the VM
-		
-You will be able to access the explorer UI on the following endpoint:
-
-* http://<VM-IP|FQDN>:5000
 
 ## Limitations
 
