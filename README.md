@@ -16,8 +16,6 @@ NODE_ENDPOINT=http://<node_endpoint> docker-compose -p up
 ```
 
 N.B. Use the `-d` at the end to run the containers in the backgroud
-
-N.B. Omitting the `-p <instance-name>` may lead to inconsitant data shown in the explorer
  
 ### Local machine
 
