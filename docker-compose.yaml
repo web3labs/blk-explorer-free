@@ -11,7 +11,7 @@ services:
         - NODE_ENDPOINT=${NODE_ENDPOINT}
         - MONGO_CLIENT_URI=mongodb://localhost:28017
         - MONGO_DB_NAME=blk-quorum-dev
-        - UI_IP=http://${EXPLORER_IP}:5000
+        - UI_IP=http://localhost:5000
     depends_on:
         - mongodb
     network_mode: "host"
@@ -22,7 +22,7 @@ services:
     ports:
         - 5000:5000
     environment:
-        - REACT_APP_EXPLORER=http://${EXPLORER_IP}:8081
+        - REACT_APP_EXPLORER=http://localhost:8081
 
   mongodb:
     image: mongo:3.4.10

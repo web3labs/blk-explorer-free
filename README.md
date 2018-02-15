@@ -12,7 +12,7 @@ This dockerized environment is designed for viewing private
 Clone the repo, navigate to the cloned directory and run the instance with:
 
 ```bash
-EXPLORER_IP=<server_ip> NODE_ENDPOINT=<node_endpoint> docker-compose -p <instance-name> up
+NODE_ENDPOINT=http://<node_endpoint>: docker-compose -p <instance-name> up
 ```
 
 The <instance-name> value should be unique for every new network being connected to.
@@ -24,7 +24,7 @@ N.B. Omitting the `-p <instance-name>` may lead to inconsitant data shown in the
 ### Local machine
 
 ```bash
-EXPLORER_IP=localhost NODE_ENDPOINT=http://localhost:20010 docker-compose -p localchain up -d
+NODE_ENDPOINT=http://localhost:20010 docker-compose -p localchain up -d
 ```
 
 You will be able to access the explorer UI on the following endpoint:
@@ -36,8 +36,9 @@ You will be able to access the explorer UI on the following endpoint:
 1. Create a Linux VM with Ubuntu. 
 2. From the created VM:
 	    1. Install Docker. 
-	    2. Proceed as with local machine instructions above, remember to set the EXPLORER_IP variable to the IP address of the VM in the cloud
-	    3. Open ports 5000 and 8081 on the VM
+	    2. Set `EXPLORER_IP=<Address_of_VM>` variable to the IP address of the VM in the cloud
+        3. Continue as per the local machine set-up above after ssh to VM, changing the 
+        4. Open ports 5000 and 8081 on the VM
 		
 You will be able to access the explorer UI on the following endpoint:
 
