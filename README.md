@@ -12,10 +12,8 @@ This dockerized environment is designed for viewing private
 Clone the repo, navigate to the cloned directory and run the instance with:
 
 ```bash
-NODE_ENDPOINT=http://<node_endpoint>: docker-compose -p <instance-name> up
+NODE_ENDPOINT=http://<node_endpoint> docker-compose -p up
 ```
-
-The `<instance-name>` value should be unique for every new network being connected to.
 
 N.B. Use the `-d` at the end to run the containers in the backgroud
 
