@@ -12,7 +12,7 @@ This dockerized environment is designed for viewing private
 Clone the repo, navigate to the cloned directory and run the instance with:
 
 ```bash
-NODE_ENDPOINT=http://<node_endpoint> docker-compose -p up
+NODE_ENDPOINT=http://<node_endpoint> docker-compose up
 ```
 
 N.B. Use the `-d` at the end to run the containers in the backgroud
@@ -20,7 +20,7 @@ N.B. Use the `-d` at the end to run the containers in the backgroud
 ### Local machine
 
 ```bash
-NODE_ENDPOINT=http://localhost:20010 docker-compose -p localchain up -d
+NODE_ENDPOINT=http://localhost:20010 docker-compose up -d
 ```
 
 You will be able to access the explorer UI on the following endpoint:
