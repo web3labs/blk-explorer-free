@@ -20,10 +20,10 @@ You will be able to access the Explorer UI via:
 
 * http://localhost:5000
  
-### Example
+### 7node example
 
 ```bash
-NODE_ENDPOINT=http://localhost:20010 docker-compose up -d
+NODE_ENDPOINT=http://localhost:22000 docker-compose up -d
 ```
 
 ## Limitations
