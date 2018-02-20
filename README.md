@@ -22,6 +22,8 @@ You will be able to access the Explorer UI via:
  
 ### 7node example
 
+You can set up the [7node](https://github.com/jpmorganchase/quorum-examples) example on your local machine and run the explorer with the following command.
+
 ```bash
 NODE_ENDPOINT=http://localhost:22000 docker-compose up -d
 ```
