@@ -11,7 +11,7 @@ services:
       - NODE_ENDPOINT=${NODE_ENDPOINT}
       - MONGO_CLIENT_URI=mongodb://docker.for.mac.host.internal:28017
       - MONGO_DB_NAME=test
-      - UI_IP=http://docker.for.mac.host.internal:5000
+      - UI_IP=http://localhost:5000
     depends_on:
       - mongodb
 
