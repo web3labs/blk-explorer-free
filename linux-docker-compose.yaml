@@ -1,0 +1,32 @@
+version: "2"
+services:
+  REST:
+    image: blkio10/explorer-free:1.0.0
+    container_name: blk-explorer-free
+    ports:
+        - 8081:8081
+    environment:
+        - JAVA_OPTS=
+        - EXPLORER_PORT=8081
+        - NODE_ENDPOINT=${NODE_ENDPOINT}
+        - MONGO_CLIENT_URI=mongodb://localhost:28017
+        - MONGO_DB_NAME=blk-quorum-dev
+        - UI_IP=http://localhost:5000
+    depends_on:
+        - mongodb
+    network_mode: "host"
+
+  web:
+    image: blkio10/explorer-ui-free:1.0.0
+    container_name: blk-explorer-ui-free
+    ports:
+        - 5000:5000
+    environment:
+        - REACT_APP_EXPLORER=http://localhost:8081
+
+  mongodb:
+    image: mongo:3.4.10
+    container_name: blk-mongodb-free
+    ports:
+        - 28017:27017
+    entrypoint: mongod --smallfiles --logpath=/dev/null --bind_ip "0.0.0.0"
