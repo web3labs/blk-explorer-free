@@ -1,0 +1,31 @@
+version: "2"
+services:
+  REST:
+    image: blkio10/explorer-free:1.0.0
+    container_name: blk-explorer-free
+    ports:
+      - 8081:8081
+    environment:
+      - JAVA_OPTS=
+      - EXPLORER_PORT=8081
+      - NODE_ENDPOINT=${NODE_ENDPOINT}
+      - MONGO_CLIENT_URI=mongodb://docker.for.mac.host.internal:28017
+      - MONGO_DB_NAME=test
+      - UI_IP=http://localhost:5000
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:3.4.10
+    container_name: blk-mongodb-free
+    ports:
+      - 28017:27017
+    entrypoint: mongod --smallfiles --logpath=/dev/null --bind_ip "0.0.0.0"
+
+  web:
+    image: blkio10/explorer-ui-free:1.0.0
+    container_name: blk-explorer-ui-free
+    ports:
+      - 5000:5000
+    environment:
+      - REACT_APP_EXPLORER=http://docker.for.mac.host.internal:8081

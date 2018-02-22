@@ -12,7 +12,7 @@ This dockerized environment is designed for viewing private
 Clone the repo, navigate to the cloned directory and run the instance with:
 
 ```bash
-NODE_ENDPOINT=http://<node_endpoint> docker-compose up
+NODE_ENDPOINT=http://<node_endpoint> docker-compose -f <os>-docker-compose.yaml up
 ```
 Append the `-d` argument to run the containers in the backgroud
 
@@ -20,12 +20,30 @@ You will be able to access the Explorer UI via:
 
 * http://localhost:5000
  
-### 7node example
+### Localhost
 
 You can set up the [7node](https://github.com/jpmorganchase/quorum-examples) example on your local machine and run the explorer with the following command.
 
+#### Mac
+
 ```bash
-NODE_ENDPOINT=http://localhost:22000 docker-compose up -d
+NODE_ENDPOINT=http://docker.for.mac.host.internal:22000 linux-docker-compose up -d
+```
+
+Use `docker.for.mac.host.internal` instead of `localhost` as described [here](https://docs.docker.com/docker-for-mac/networking/#use-cases-and-workarounds)
+
+#### Windows
+
+```bash
+NODE_ENDPOINT=http://docker.for.win.host.internal:22000 linux-docker-compose up -d
+```
+
+Use `docker.for.win.host.internal` instead of `localhost` as described [here](https://github.com/docker/for-win/issues/1638)
+
+#### Linux
+
+```bash
+NODE_ENDPOINT=http://localhost:22000 linux-docker-compose up -d
 ```
 
 ## Limitations
