@@ -35,7 +35,7 @@ Use `docker.for.mac.host.internal` instead of `localhost` as described [here](ht
 #### Windows
 
 ```bash
-NODE_ENDPOINT=http://docker.for.win.localhost:22000 linux-docker-compose up -d
+NODE_ENDPOINT=http://docker.for.win.host.internal:22000 linux-docker-compose up -d
 ```
 
 Use `docker.for.win.host.internal` instead of `localhost` as described [here](https://github.com/docker/for-win/issues/1638)
