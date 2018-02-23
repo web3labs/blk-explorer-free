@@ -28,4 +28,4 @@ services:
     ports:
       - 5000:5000
     environment:
-      - REACT_APP_EXPLORER=http://docker.for.mac.host.internal:8081
+      - REACT_APP_EXPLORER=http://localhost:8081
