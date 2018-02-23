@@ -27,7 +27,7 @@ You can set up the [7node](https://github.com/jpmorganchase/quorum-examples) exa
 #### Mac
 
 ```bash
-NODE_ENDPOINT=http://docker.for.mac.host.internal:22000 linux-docker-compose up -d
+NODE_ENDPOINT=http://docker.for.mac.host.internal:22000 docker-compose -f mac-docker-compose.yaml up -d
 ```
 
 Use `docker.for.mac.host.internal` instead of `localhost` as described [here](https://docs.docker.com/docker-for-mac/networking/#use-cases-and-workarounds)
@@ -43,7 +43,7 @@ Use `docker.for.win.host.internal` instead of `localhost` as described [here](ht
 #### Linux
 
 ```bash
-NODE_ENDPOINT=http://localhost:22000 linux-docker-compose up -d
+NODE_ENDPOINT=http://localhost:22000 docker-compose -f linux-docker-compose.yaml up -d
 ```
 
 ## Limitations
