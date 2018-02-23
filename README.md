@@ -50,3 +50,4 @@ NODE_ENDPOINT=http://localhost:22000 docker-compose -f linux-docker-compose.yaml
 
 1. Due to a [limitation](https://github.com/moby/moby/issues/1143) with Docker, you may only have one instance of the Explorer running at a time.
 2. Viewing private transaction payloads on Quorum v2.0.0 (prior versions work) is not supported due to [this](https://github.com/jpmorganchase/quorum/issues/221) issue which should be fixed shortly.
+3. Currently there is no guarantee that the information in the explorer is consistent with the blockchain as there is no mechanism to take into account reorgs.
