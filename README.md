@@ -26,7 +26,7 @@ To stop the containers use:
 docker-compose -f <os>-docker-compose.yaml down
 ```
 
-To connect to new network you need to delete one fo the containers with:
+To connect to new network you need to delete one of the containers with:
 
 ```bash
 docker rm blk-mongodb-free
