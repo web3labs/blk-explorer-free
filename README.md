@@ -19,6 +19,18 @@ Append the `-d` argument to run the containers in the backgroud
 You will be able to access the Explorer UI via:
 
 * http://localhost:5000
+
+To stop the containers use:
+
+```bash
+docker-compose -f <os>-docker-compose.yaml down
+```
+
+To connect to new network you need to delete one fo the containers with:
+
+```bash
+docker rm blk-mongodb-free
+```
  
 ### Localhost
 
