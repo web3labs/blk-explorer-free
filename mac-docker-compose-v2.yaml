@@ -9,7 +9,7 @@ services:
       - JAVA_OPTS=
       - EXPLORER_PORT=8081
       - NODE_ENDPOINT=${NODE_ENDPOINT}
-      - MONGO_CLIENT_URI=mongodb://docker.for.mac.host.internal:28017
+      - MONGO_CLIENT_URI=mongodb://mongodb:27017
       - MONGO_DB_NAME=test
       - UI_IP=http://localhost:5000
     depends_on:
