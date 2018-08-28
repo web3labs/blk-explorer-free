@@ -1,7 +1,7 @@
 version: "2"
 services:
   REST:
-    image: econnectacs.azurecr.io/explorer/explorer:1.1.6
+    image: blkio10/explorer-free:2.0.0
     container_name: blk-explorer-free-v2
     ports:
       - 8081:8081
@@ -23,7 +23,7 @@ services:
     entrypoint: mongod --smallfiles --logpath=/dev/null --bind_ip "0.0.0.0"
 
   web:
-    image: econnectacs.azurecr.io/explorer/explorer-ui:1.6.6
+    image: blkio10/explorer-ui-free:2.0.0
     container_name: blk-explorer-ui-free
     ports:
       - 5000:5000
