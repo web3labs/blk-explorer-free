@@ -24,7 +24,7 @@ services:
 
   web:
     image: blkio10/explorer-ui-free:2.0.0
-    container_name: blk-explorer-ui-free
+    container_name: blk-explorer-ui-free-v2
     ports:
       - 5000:5000
     environment:
