@@ -13,7 +13,7 @@ This dockerized environment is designed for viewing private
 Clone the repo, navigate to the cloned directory and run the instance with:
 
 ```bash
-NODE_ENDPOINT=http://<node_endpoint> docker-compose -f blk-free-explorer.yaml up
+NODE_ENDPOINT=http://<node_endpoint> docker-compose -f docker-compose.yaml up
 ```
 Append the `-d` argument to run the containers in the backgroud
 
@@ -24,7 +24,7 @@ You will be able to access the Explorer UI via:
 To stop the containers use:
 
 ```bash
-docker-compose -f blk-free-explorer.yaml down
+docker-compose -f docker-compose.yaml down
 ```
 
 To connect to new network you need to delete one of the containers with:
@@ -46,5 +46,3 @@ NODE_ENDPOINT=<node_endpoint> docker-compose -f blk-free-explorer.yaml up -d
 ## Limitations
 
 1. Due to a [limitation](https://github.com/moby/moby/issues/1143) with Docker, you may only have one instance of the Explorer running at a time.
-2. Viewing private transaction payloads on Quorum v2.0.0 (prior versions work) is not supported due to [this](https://github.com/jpmorganchase/quorum/issues/221) issue which should be fixed shortly.
-3. Currently there is no guarantee that the information in the explorer is consistent with the blockchain as there is no mechanism to take into account reorgs.
