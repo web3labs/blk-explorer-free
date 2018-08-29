@@ -1,6 +1,6 @@
 # Block Explorer for Quorum and Ethereum
 
-![alt text](https://raw.githubusercontent.com/blk-io/blk-explorer-free/master/docs/source/Selection_051.png "Blk-Explorer-Free")
+![alt text](https://raw.githubusercontent.com/blk-io/blk-explorer-free/master/docs/source/ExplorerCaption.png "Blk-Explorer-Free")
 
 
 ## Introduction
