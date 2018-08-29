@@ -13,7 +13,7 @@ This dockerized environment is designed for viewing private
 Clone the repo, navigate to the cloned directory and run the instance with:
 
 ```bash
-NODE_ENDPOINT=http://<node_endpoint> docker-compose -f docker-compose.yaml up
+NODE_ENDPOINT=http://<node_endpoint> docker-compose up
 ```
 Append the `-d` argument to run the containers in the backgroud
 
@@ -24,7 +24,7 @@ You will be able to access the Explorer UI via:
 To stop the containers use:
 
 ```bash
-docker-compose -f docker-compose.yaml down
+docker-compose down
 ```
 
 To connect to new network you need to delete one of the containers with:
@@ -37,12 +37,10 @@ docker rm blk-mongodb-free
 
 You can set up the [7node](https://github.com/jpmorganchase/quorum-examples) example on your local machine and run the explorer with the following command.
 
-#### Use for all OS
-
 ```bash
-NODE_ENDPOINT=<node_endpoint> docker-compose -f blk-free-explorer.yaml up -d
+NODE_ENDPOINT=<node_endpoint> docker-compose up -d
 ```
 
 ## Limitations
 
-1. Due to a [limitation](https://github.com/moby/moby/issues/1143) with Docker, you may only have one instance of the Explorer running at a time.
+ - Due to a [limitation](https://github.com/moby/moby/issues/1143) with Docker, you may only have one instance of the Explorer running at a time.
