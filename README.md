@@ -33,13 +33,15 @@ To connect to new network you need to delete one of the containers with:
 docker rm blk-mongodb-free
 ```
  
-### Localhost
+### Local Quorum Networks
 
-You can set up the [7node](https://github.com/jpmorganchase/quorum-examples) example on your local machine and run the explorer with the following command.
+If you need to run a Quorum network locally, we recommend you use the following [4-node Quorum Docker image](https://github.com/blk-io/crux#4-node-quorum-network-with-crux), you can then start the Explorer via:
 
 ```bash
-NODE_ENDPOINT=<node_endpoint> docker-compose up -d
+NODE_ENDPOINT=http://localhost:22001 docker-compose up
 ```
+
+Alternatively there is a Vagrant version available [here](https://github.com/blk-io/quorum-examples).
 
 ## Limitations
 
