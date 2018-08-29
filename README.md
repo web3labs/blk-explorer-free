@@ -1,4 +1,4 @@
-# Block Explorer for Quorum and Ethereum
+# Blockchain Explorer for Quorum and Ethereum
 
 ![alt text](https://raw.githubusercontent.com/blk-io/blk-explorer-free/master/docs/source/ExplorerCaption.png "Blk-Explorer-Free")
 
