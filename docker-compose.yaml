@@ -1,7 +1,7 @@
 version: "2"
 services:
   REST:
-    image: blkio10/explorer-free:3.0.0
+    image: blkio10/explorer-free:2.0.0
     container_name: blk-free-explorer
     ports:
       - 8081:8081
