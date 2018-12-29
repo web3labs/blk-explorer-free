@@ -15,9 +15,10 @@ Clone the repo, navigate to the cloned directory and run the instance with:
 ```bash
 NODE_ENDPOINT=http://<node_endpoint> docker-compose up
 ```
-Append the `-d` argument to run the containers in the backgroud
+Append the `-d` argument to run the containers in the backgroud.
+
 If you run docker(-compose) using `sudo` specify `sudo`'s `-E` option to
-preserve the set environment variables
+preserve the set environment variables.
 
 You will be able to access the Explorer UI via:
 
@@ -26,7 +27,7 @@ You will be able to access the Explorer UI via:
 If you want to run the Explorer on a remote server, change the host ip
 so that the js requests from the UI are routed correctly:
 ```bash
-NODE_ENDPOINT=http://<node_endpoint> HOST_IP=<ip if the (docker) host running the containers> docker-compose up
+NODE_ENDPOINT=http://<node_endpoint> HOST_IP=<IP of (docker) host running the containers> docker-compose up
 ```
 
 
@@ -36,10 +37,10 @@ To stop the containers use:
 docker-compose down
 ```
 
-To connect to new network you need to delete one of the containers with:
+To connect to a new network you need to delete one of the containers with:
 
 ```bash
-docker rm blk-mongodb-free
+docker rm blk-free-mongodb
 ```
  
 ### Local Quorum Networks
