@@ -16,10 +16,19 @@ Clone the repo, navigate to the cloned directory and run the instance with:
 NODE_ENDPOINT=http://<node_endpoint> docker-compose up
 ```
 Append the `-d` argument to run the containers in the backgroud
+If you run docker(-compose) using `sudo` specify `sudo`'s `-E` option to
+preserve the set environment variables
 
 You will be able to access the Explorer UI via:
 
 * http://localhost:5000
+
+If you want to run the Explorer on a remote server, change the host ip
+so that the js requests from the UI are routed correctly:
+```bash
+NODE_ENDPOINT=http://<node_endpoint> HOST_IP=<ip if the (docker) host running the containers> docker-compose up
+```
+
 
 To stop the containers use:
 

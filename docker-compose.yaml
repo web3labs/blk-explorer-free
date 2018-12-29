@@ -1,4 +1,4 @@
-version: "2"
+version: "2.1"
 services:
   REST:
     image: blkio10/explorer-free:2.0.0
@@ -11,7 +11,7 @@ services:
       - NODE_ENDPOINT=${NODE_ENDPOINT}
       - MONGO_CLIENT_URI=mongodb://mongodb:27017
       - MONGO_DB_NAME=test
-      - UI_IP=http://localhost:5000
+      - UI_IP=http://${HOST_IP:-localhost}:5000
       - USE_COSMOS=false
     depends_on:
       - mongodb
@@ -29,4 +29,4 @@ services:
     ports:
       - 5000:5000
     environment:
-      - REACT_APP_EXPLORER=http://localhost:8081
+      - REACT_APP_EXPLORER=http://${HOST_IP:-localhost}:8081
