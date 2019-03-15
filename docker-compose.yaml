@@ -1,12 +1,12 @@
 version: "2"
 services:
   REST:
-    image: blkio10/explorer-free:2.1.1
+    image: blkio10/explorer-free:2.1.2
     container_name: blk-free-explorer
     ports:
       - 8081:8081
     environment:
-      - ENABLE_PRIVATE_QUORUM=“enabled”
+      - ENABLE_PRIVATE_QUORUM=enabled
       - JAVA_OPTS=
       - EXPLORER_PORT=8081
       - NODE_ENDPOINT=${NODE_ENDPOINT}
@@ -25,7 +25,7 @@ services:
     entrypoint: mongod --smallfiles --logpath=/dev/null --bind_ip "0.0.0.0"
 
   web:
-    image: blkio10/explorer-ui-free:2.1.1
+    image: blkio10/explorer-ui-free:2.1.2
     container_name: blk-free-explorer-ui
     ports:
       - 5000:5000
