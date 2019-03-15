@@ -6,6 +6,7 @@ services:
     ports:
       - 8081:8081
     environment:
+      - ENABLE_PRIVATE_QUORUM=“enabled”
       - JAVA_OPTS=
       - EXPLORER_PORT=8081
       - NODE_ENDPOINT=${NODE_ENDPOINT}
